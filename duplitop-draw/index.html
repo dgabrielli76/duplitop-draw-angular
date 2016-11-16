@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="duplitop">
   <head>
+    <meta charset="UTF-8">
+    <title>Duplitop draw</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -12,10 +14,15 @@
     <!--  -->
     <script type="text/javascript" src="js/index.js"></script>
 
+    <!-- Services -->
+    <script type="text/javascript" src="js/services/draw.js"></script>
+
     <!-- Controllers -->
     <script type="text/javascript" src="js/controllers/home.js"></script>
   </head>
   <body>
+    <h1>Welcome to the Duplitop draw App!</h1>
+    </br>
     <div ng-controller="AppCtrl">
       <div ng-view></div>
     </div>

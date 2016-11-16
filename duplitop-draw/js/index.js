@@ -13,6 +13,6 @@ app.config(
   }
 );
 
-app.controller('AppCtrl', function($scope) {
-
+app.controller('AppCtrl', function($scope, DrawAPI) {
+  DrawAPI.makeADraw();
 });

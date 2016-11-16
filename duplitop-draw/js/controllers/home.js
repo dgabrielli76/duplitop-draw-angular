@@ -1,4 +1,6 @@
 
-angular.module('duplitop').controller('HomeCtrl', function($scope) {
-  $scope.test = 'Hello World';
+angular.module('duplitop').controller('HomeCtrl', function($scope, DrawAPI) {
+  $scope.makeADraw = function(length) {
+    $scope.outputLetters = DrawAPI.makeADraw(length);
+  };
 });
